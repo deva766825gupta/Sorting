@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="nav-heading">SORTING VISUALISER</h1>
+      <nav>
+        <div class="header_right">
+          <div class="array-inputs">
+            <div>
+              <p>Size of the array:</p>
+              <input id="a_size" type="range" min="20" max="150" step="1" value="80" />
+            </div>
+            <div>
+              <p>Speed of the algorithm:</p>
+              <input id="a_speed" type="range" min="1" max="5" step="1" value="4" background-colo="red" />
+            </div>
+            <div><button id="a_generate">Generate New Array!</button></div>
+          </div>
+          <div class="algos">
+            <button>Bubble</button>
+            <button>Selection</button>
+            <button>Insertion</button>
+            <button>Merge</button>
+            <button>Quick</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div id="Info_Cont1">
+        
+        <br>
+        <h2>Steps to use Visualizer:- </h2>
+        <h3>1.Use the slider to set size of array.</h3>
+        <h3>2.Use the slider to set speed of sorting.</h3>
+        <h3>3.Generate New Array button can be used to change the elements of array.</h3>
+        <h3>4.Click the 5 buttons labelled with names of sorting algorithms to sort the array as per that sorting algorithm.</h3>
+      </div>
+
+      <div id="array_container"></div>
+
+      
+    </section>
+
+    <div class="bottom-container">
+      <p>© 2024 Devansh Gupta</p>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+
+    <script src="./scripts/visualizations.js"></script>
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+  </body>
+</html>
