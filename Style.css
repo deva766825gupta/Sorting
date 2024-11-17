@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #222;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 0% 5%;
+}
+
+nav .array-inputs {
+  display: flex;
+}
+nav .array-inputs div {
+  margin: 0 50px 0;
+}
+nav .array-inputs #a_size {
+  -webkit-appearance:none ;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: aqua;
+  outline: none;
+  opacity: 0.7;
+}
+
+nav .array-inputs #a_speed {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: aqua;
+  outline: none;
+  opacity: 0.7;
+}
+
+nav .array-inputs #a_generate {
+  background-color: transparent;
+  border: white;
+  border-style: solid;
+  outline: none;
+  color: white;
+  background-color: #222;
+  transition: all 0.2s ease-in;
+  border-radius: 10px;
+  padding: 4%;
+}
+
+nav .array-inputs #a_generate:hover {
+  color: #222;
+  cursor: pointer;
+  background-color: white;
+}
+
+nav .header_right {
+  display: -webkit-box;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.nav-heading {
+  text-align: center;
+  display: inline-block;
+  font-size: xxx-large;
+  padding: 5px;
+  width: 99.35%;
+  background-color: #222;
+  color: white;
+}
+
+nav .header_right .algos {
+  display: flex;
+  place-content: center;
+  padding: 2% 0%;
+}
+.algos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  align-items: middle;
+}
+nav .header_right .algos button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 2% 2%;
+  font-size: x-large;
+  transition: all 0.2s ease-in-out;
+}
+
+nav .header_right .algos button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_locked:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_selected {
+  background-color: white;
+  color: green;
+}
+
+nav .header_right .algos .butt_selected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+nav .header_right .algos .butt_unselected:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+  grid-template-columns: 20% 60% 20%;
+}
+
+section #array_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  width: 100%;
+  height: 65vh;
+}
+
+section #Info_Cont1 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center; 
+  height: 50vh;
+}
+
+section #Info_Cont2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.a_container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.bottom-container {
+  background-color: #222;
+  bottom: 0;
+  color: white;
+  padding: 1%;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
